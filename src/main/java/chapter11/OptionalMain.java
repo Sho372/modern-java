@@ -46,8 +46,6 @@ public class OptionalMain {
 //                .map(Insurance::getName);
 //    }
 
-    // orElseでdefault値を設定することで、Insurance::getNameの返すOptional<String>がunwrapされる
-
     // Item 16: Do Not Use Optional in Methods Arguments
     public String getCarInsuranceName3(Person2 person) {
         Optional<Person2> optPerson = Optional.ofNullable(person);
